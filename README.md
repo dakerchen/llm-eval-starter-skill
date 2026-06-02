@@ -1,16 +1,18 @@
 # LLM Eval Starter Skill
 
-A small, open-source-ready Skill for creating task-specific LLM evaluation packages.
+A starter kit for turning ad-hoc AI quality checks into a repeatable evaluation package.
 
-It helps teams move from "the output feels better" to a repeatable loop:
+Use it when you need to answer one question clearly: is this prompt, model, agent, RAG flow, or workflow good enough to ship?
 
-1. Define the target behavior.
-2. Create smoke and regression samples.
-3. Choose a grader strategy.
-4. Run a small baseline.
-5. Report failure types and next actions.
+| You want to... | This repo gives you... |
+| --- | --- |
+| define the decision | an intake checklist and success standard |
+| build test cases | smoke and regression samples |
+| judge the output | a rubric and deterministic checker |
+| review the result | a baseline report and failure summary |
+| run the eval | an OpenAI Evals-compatible scaffold or a local runner |
 
-This project does not vendor OpenAI Evals or any other eval framework. It provides a reusable Skill, templates, and helper scripts that can work with OpenAI Evals or a local runner.
+This project does not vendor OpenAI Evals or any other eval framework. It provides the assets and helper scripts you need to run your own eval loop.
 
 ## Install
 
@@ -28,11 +30,10 @@ pip install -e .
 
 ## What It Is For
 
-- Prompt regression checks.
-- Model or prompt version comparison.
-- Agent, RAG, or workflow output QA.
-- Small eval scaffolds before investing in a full evaluation system.
-- Product-facing quality reports that separate results, failures, causes, and next steps.
+- Decide whether an AI behavior is ready to ship.
+- Compare prompt, model, agent, RAG, or workflow versions.
+- Turn real examples into a reusable eval set.
+- Produce a report that separates results, failures, causes, and next steps.
 
 ## What It Is Not
 

@@ -1,7 +1,7 @@
 ---
 name: llm-eval-starter
 version: "1.0.0"
-description: Design a small, decision-ready LLM evaluation package before scaling an AI feature. Use when the user wants to evaluate a model, prompt, agent, RAG flow, workflow, or AI application; create test samples, rubrics, deterministic checks, baseline reports, or an OpenAI Evals-compatible starter scaffold; or decide whether their current examples are enough for a real quality baseline.
+description: Turn ad-hoc AI quality checks into a small, decision-ready eval package. Use when the user wants to decide whether a model, prompt, agent, RAG flow, workflow, or AI application is ready to ship; create test samples, rubrics, deterministic checks, baseline reports, or an OpenAI Evals-compatible starter scaffold; or compare versions with a repeatable evaluation loop.
 ---
 
 # LLM Eval Starter

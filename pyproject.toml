@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "llm-eval-starter-skill"
 version = "1.0.0"
-description = "Open-source starter for task-specific LLM evaluation packages."
+description = "Starter kit for turning AI quality checks into repeatable evaluation packages."
 readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"
