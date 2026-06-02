@@ -1,0 +1,11 @@
+# Starter OpenAI Evals-style registry config.
+# Replace the placeholders with your eval name and folder.
+
+evals:
+  __EVAL_ID__:
+    id: __EVAL_ID__
+    metrics:
+      - accuracy
+    class: evals.elsuite.basic.match:Match
+    args:
+      samples_jsonl: __EVAL_FOLDER__/samples.jsonl

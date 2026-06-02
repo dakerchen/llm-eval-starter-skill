@@ -1,0 +1,4 @@
+name: llm-eval-starter
+display_name: "LLM Eval Starter"
+short_description: "Design starter evals, rubrics, samples, gates, and reports for LLM apps."
+default_prompt: "Use $llm-eval-starter to design a task-specific eval package with samples, grader strategy, quality gates, and a decision-ready report."

@@ -1,0 +1,11 @@
+dist/
+build/
+*.egg-info/
+*.zip
+__pycache__/
+*.pyc
+.DS_Store
+.pytest_cache/
+.env
+tmp/
+evallogs/

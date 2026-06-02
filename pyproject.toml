@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-eval-starter-skill"
+version = "1.0.0"
+description = "Open-source starter for task-specific LLM evaluation packages."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+keywords = ["llm", "eval", "evaluation", "openai-evals", "prompt", "rag"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Libraries",
+]
+
+[project.scripts]
+llm-eval-starter-validate = "llm_eval_starter.cli:validate_cmd"
+llm-eval-starter-summarize = "llm_eval_starter.cli:summarize_cmd"
+llm-eval-starter-detect = "llm_eval_starter.cli:detect_cmd"
+llm-eval-starter-scaffold = "llm_eval_starter.cli:scaffold_cmd"
+llm-eval-starter-build-release = "llm_eval_starter.cli:build_release_cmd"
+
+[project.urls]
+Homepage = "https://example.com/llm-eval-starter"
+Repository = "https://example.com/llm-eval-starter"
+Issues = "https://example.com/llm-eval-starter/issues"
+
+[project.optional-dependencies]
+release = ["build>=1.2"]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
